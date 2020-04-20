@@ -7,3 +7,6 @@ from django.contrib import admin
 #admin.site.register(model2)
 #admin.site.register(model3)
 #admin.site.register(model4)
+
+
+# Checking git by Anubhav Madhav
