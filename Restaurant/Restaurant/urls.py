@@ -17,6 +17,6 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('say/', include('say.urls')),              #  check the server at "http://127.0.0.1:8000/say/"
+    path('', include('say.urls')),              #  check the server at "http://127.0.0.1:8000/say/"
     path('admin/', admin.site.urls),
 ]
