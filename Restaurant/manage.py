@@ -6,6 +6,7 @@ import sys
 #This is yashash just checking to commit my changes over git.
 #just checking don't get mad at me hahahhaha
 # Aaj kuch padha? End sem ke liye?
+#pagal launde
 def main():
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Restaurant.settings')
     try:
