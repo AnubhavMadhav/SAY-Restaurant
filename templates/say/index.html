@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block extrahead %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock extrahead %}
+{% block title %}
+SAY Restaurant
+{% endblock title %}
+{% block homeactive %} active {% endblock homeactive %}
+
+
+
+{% block content %}
+
+
+
+
+<div class="container heading my-5">
+<h2>Welcome to SAY - Restaurant!!</h2>
+</div>
+
+
+<a href="/menu"><button type="button" class="order btn btn-outline-warning mx-5" > Order Now</button></a>
+
+
+
+<div class="container">
+<div class="container-fluid mt-5">
+<footer class="blog-footer">
+  <i class="fas fa-code"></i> with <i class="fas fa-heart"></i> by <a class="myprofile" href="https://anubhavmadhav.github.io/Anubhav-Madhav/">Anubhav Madhav</a>
+  <br>
+  <br>
+  <p class="copyright"> © 2020 Anubhav Madhav. All Rights Reserved </p>
+</footer>
+</div>
+{% endblock content %}

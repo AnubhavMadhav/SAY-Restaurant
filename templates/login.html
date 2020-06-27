@@ -1,0 +1,29 @@
+{% load static %}
+<!--{% block title %}Sign Up{% endblock title %}-->
+
+{% block extrahead %}
+<link rel="stylesheet" href="{% static 'css/login.css' %}">
+<script src="https://kit.fontawesome.com/e7f22e9e23.js" crossorigin="anonymous"></script>
+{% endblock extrahead %}
+
+<!--{% block signupactive %} active {% endblock signupactive %}-->
+
+{% block content %}
+    <!-- Ready to use Font Awesome. Activate interlock. Dynotherms - connected. Infracells - up. Icons are go! -->
+
+    <div class="container">
+        <form action="/handleLogin" method="post">
+            {% csrf_token %}
+        <h1>Sign In</h1>
+        <div class="box">
+            <i class="fa fa-envelope"></i>
+            <input type="email" name="email" id="email" placeholder="Enter Your Email">
+        </div>
+        <div class="box">
+            <i class="fa fa-key"></i>
+            <input type="password" name="password" id="password" placeholder="Enter Your Password">
+        </div>
+        <button class="btn">Sign In</button>
+        </form>
+    </div>
+{% endblock content %}

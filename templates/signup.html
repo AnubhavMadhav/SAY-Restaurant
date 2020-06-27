@@ -1,0 +1,58 @@
+{% load static %}
+<!--{% block title %}Sign Up{% endblock title %}-->
+
+{% block extrahead %}
+<link rel="stylesheet" href="{% static 'css/signup.css' %}">
+<script src="https://kit.fontawesome.com/e7f22e9e23.js" crossorigin="anonymous"></script>
+{% endblock extrahead %}
+
+<!--{% block signupactive %} active {% endblock signupactive %}-->
+
+{% block content %}
+
+    <!-- Ready to use Font Awesome. Activate interlock. Dynotherms - connected. Infracells - up. Icons are go! -->
+
+    <div class="container">
+        <form action="/handleSignup" method="post">
+            {% csrf_token %}
+        <h1>Sign Up</h1>
+        <div class="box">
+            <i class="fa fa-user"></i>
+            <input type="text" name="firstname" id="fname" placeholder="Enter Your First Name">
+        </div>
+        <div class="box">
+            <i class="fa fa-user-o"></i>
+            <input type="text" name="lastname" id="lname" placeholder="Enter Your Last Name">
+        </div>
+        <div class="box">
+            <i class="fa fa-home"></i>
+            <input type="text" name="address1" id="address1" placeholder="Enter Your House/Flat No.">
+        </div>
+        <div class="box">
+            <!-- <i class="fa fa-home"></i> -->
+            <input type="text" name="address2" id="address2" placeholder="Enter Your Street Address">
+        </div>
+        <div class="box">
+            <!-- <i class="fa fa-home"></i> -->
+            <input type="text" name="city" id="city" placeholder="Enter Your City">
+        </div>
+        <div class="box">
+            <i class="fa fa-phone fa-flip-horizontal"></i>
+            <input type="text" name="contact" id="contact" placeholder="Enter Your Contact No.">
+        </div>
+        <div class="box">
+            <i class="fa fa-envelope"></i>
+            <input type="email" name="email" id="email" placeholder="Enter Your Email">
+        </div>
+        <div class="box">
+            <i class="fa fa-key"></i>
+            <input type="password" name="password" id="pass1" placeholder="Enter Your Password">
+        </div>
+        <div class="box">
+            <i class="fa fa-key"></i>
+            <input type="password" name="password" id="pass2" placeholder="Confirm Your Password">
+        </div>
+        <button class="btn" type="submit">Sign Up</button>
+        </form>
+    </div>
+{% endblock content %}
